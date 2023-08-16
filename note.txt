@@ -5,9 +5,17 @@ document.getElementById('blue').addEventListener('click' function(){ })
 document.getElementById('input').value;
 document.getElementById('input').addEventListener('focus' function(){ })
 document.getElementById('input').addEventListener('blur' function(){ })
-document.getElementById('input').addEventListener('keyup' function(){ 
-    event.target.value;
+document.getElementById('input').addEventListener('keyup' function(myEvent){ 
+    myEvent.target.value;
 })
+
+myEvent.stopPropagation();
+myEvent.stopImmediatePropagation();
+
+
+document.getElementById('list-container').addEventListener('click', function(myEvent){
+    myEvent.target.parentNode.removeChild(myEvent.target);
+});
 
 
 
