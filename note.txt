@@ -1,5 +1,16 @@
 
-onclick="";
+document.getElementById('blue').onclick="";
+document.getElementById('blue').addEventListener('click' function(){ })
+
+document.getElementById('input').value;
+document.getElementById('input').addEventListener('focus' function(){ })
+document.getElementById('input').addEventListener('blur' function(){ })
+document.getElementById('input').addEventListener('keyup' function(){ 
+    event.target.value;
+})
+
+
+
 
 
 
