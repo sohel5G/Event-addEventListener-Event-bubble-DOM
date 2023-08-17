@@ -16,7 +16,7 @@ document.getElementById('section').addEventListener('click', function(){
 document.getElementById('body').addEventListener('click', function(){
     console.log('Html Body Clicked');
 });
-*/ 
+*/
 
 
 // let items = document.getElementsByClassName('item');
@@ -26,28 +26,13 @@ document.getElementById('body').addEventListener('click', function(){
 //     });
 // }
 
-document.getElementById('list-container').addEventListener('click', function(myEvent){
+document.getElementById('list-container').addEventListener('click', function (myEvent) {
     myEvent.target.parentNode.removeChild(myEvent.target);
 });
 
-
-
-document.getElementById('btn-add-item').addEventListener('click', function(){
+document.getElementById('btn-add-item').addEventListener('click', function () {
     let li = document.createElement('li');
     li.innerText = 'Item add by JavaScript';
     li.classList.add('item');
     document.getElementById('list-container').appendChild(li);
 });
-
-
-
-
-
-
-
- 
-
-
-
-
-
